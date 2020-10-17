@@ -15,9 +15,9 @@ import { compose } from '@styled-system/core'
 import { background } from 'atomic-system'
 
 ...
-	compose(
-		background
-	)
+  compose(
+    background
+  )
 ...
 
 <Box bgs='red' bgPosi='center' bgRepeat='no-repeat' />
