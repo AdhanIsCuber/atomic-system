@@ -20,8 +20,8 @@ import { background } from 'atomic-system'
 ```
 
 ## Table References
-This page -> [Table References](https://github.com/adhaniscuber/atomic-system/blob/master/REFERENCES.md "Table References")
 
+This page -> [Table References](https://github.com/adhaniscuber/atomic-system/blob/master/REFERENCES.md 'Table References')
 
 ## Todo
 
@@ -37,3 +37,5 @@ This page -> [Table References](https://github.com/adhaniscuber/atomic-system/bl
 ## Contribution
 
 - create interface props and creata config from table references
+
+This the detail -> [CONTRIBUTING](https://github.com/adhaniscuber/atomic-system/blob/master/CONTRIBUTING.md 'CONTRIBUTING')
