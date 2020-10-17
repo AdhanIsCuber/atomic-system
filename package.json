@@ -1,0 +1,38 @@
+{
+  "name": "atomic-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/goods-core.js",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "directories": {
+    "lib": "./lib"
+  },
+  "files": [
+    "lib",
+    "lib/node_modules",
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "@styled-system/core": "^5.1.2",
+    "csstype": "^3.0.3",
+    "tslib": "^2.0.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc --pretty"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adhaniscuber/atomic-system.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adhaniscuber/atomic-system/issues"
+  },
+  "homepage": "https://github.com/adhaniscuber/atomic-system#readme"
+}
