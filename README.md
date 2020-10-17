@@ -4,10 +4,6 @@
 
 Atomic System is a collection of styled systems with custom property names
 
-## Prerequisites
-
-- @styled-system/core
-
 ## How to use
 
 ```jsx
