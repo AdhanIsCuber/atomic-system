@@ -2,7 +2,7 @@
 
 ## Introduce
 
-Atomic System is a collection of styled systems with custom property names
+Atomic System is a collection of styled-system prop with custom simple property names.
 
 ## How to use
 
@@ -11,13 +11,17 @@ import { compose } from '@styled-system/core'
 import { background } from 'atomic-system'
 
 ...
-	compose(
-		background
-	)
+  compose(
+    background
+  )
 ...
 
 <Box bgs='red' bgPosi='center' bgRepeat='no-repeat' />
 ```
+
+## Table References
+This page -> [Table References](https://github.com/adhaniscuber/atomic-system/blob/master/REFERENCES.md "Table References")
+
 
 ## Todo
 
