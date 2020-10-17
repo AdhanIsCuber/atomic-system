@@ -2,7 +2,7 @@
 
 ## Introduce
 
-Atomic System is a collection of styled systems with custom property names
+Atomic System is a collection of styled-system prop with custom simple property names.
 
 ## Prerequisites
 
