@@ -23,6 +23,10 @@ import { background } from 'atomic-system'
 <Box bgs='red' bgPosi='center' bgRepeat='no-repeat' />
 ```
 
+## Table References
+This page -> [Table References](https://github.com/adhaniscuber/atomic-system/blob/master/REFERENCES.md "Table References")
+
+
 ## Todo
 
 - [x] setup Env (Typescript)
