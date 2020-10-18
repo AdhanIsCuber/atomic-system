@@ -13,4 +13,4 @@ const config: Config<ShadowProps> = {
   tShadow: { property: 'texShadow' },
 }
 
-export const background = system<ShadowProps>(config)
+export const shadow = system<ShadowProps>(config)
