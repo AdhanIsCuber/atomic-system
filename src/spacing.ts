@@ -2,20 +2,20 @@ import {Property as CSS} from 'csstype'
 import {system, Config, ResponsiveValue, ThemeType} from '@styled-system/core'
 
 export interface SpacingProps<Theme extends ThemeType = ThemeType>{
-    m?: ResponsiveValue<CSS.Background, Theme>
-    mt?: ResponsiveValue<CSS.Background, Theme>
-    mr?: ResponsiveValue<CSS.Background, Theme>
-    mb?: ResponsiveValue<CSS.Background, Theme>
-    ml?: ResponsiveValue<CSS.Background, Theme>
-    mx?: ResponsiveValue<CSS.Background, Theme>
-    my?: ResponsiveValue<CSS.Background, Theme>
-    p?: ResponsiveValue<CSS.Background, Theme>
-    pt?: ResponsiveValue<CSS.Background, Theme>
-    pr?: ResponsiveValue<CSS.Background, Theme>
-    pb?: ResponsiveValue<CSS.Background, Theme>
-    pl?: ResponsiveValue<CSS.Background, Theme>
-    px?: ResponsiveValue<CSS.Background, Theme>
-    py?: ResponsiveValue<CSS.Background, Theme>
+    m?: ResponsiveValue<CSS.Margin, Theme>
+    mt?: ResponsiveValue<CSS.MarginTop, Theme>
+    mr?: ResponsiveValue<CSS.MarginRight, Theme>
+    mb?: ResponsiveValue<CSS.MarginBottom, Theme>
+    ml?: ResponsiveValue<CSS.MarginLeft, Theme>
+    mx?: ResponsiveValue<CSS.MarginRight, MarginLeft, Theme>
+    my?: ResponsiveValue<CSS.MarginTop, MarginBottom, Theme>
+    p?: ResponsiveValue<CSS.Padding, Theme>
+    pt?: ResponsiveValue<CSS.PaddingTop, Theme>
+    pr?: ResponsiveValue<CSS.PaddingRight, Theme>
+    pb?: ResponsiveValue<CSS.PaddingBottom, Theme>
+    pl?: ResponsiveValue<CSS.PaddingLeft, Theme>
+    px?: ResponsiveValue<CSS.PaddingRight,PaddingLeft, Theme>
+    py?: ResponsiveValue<CSS.PaddingTop,paddingBottom Theme>
 }
 
 const config: Config<SpacingProps> = {
@@ -24,14 +24,14 @@ const config: Config<SpacingProps> = {
     mr: { property: 'marginRight' },
     mb: {propery:'marginBottom'},
     ml: { property: 'marginLeft' },
-    mx: {propery:'marginRight','marginLeft'},
+    mx: {propery: 'marginRight','marginLeft'},
     my: { property: 'marginTop','marginBottom'},
     p: { property: 'padding' },
     pt: {propery:'paddingTop'},
     pr: {propery:'paddingRight'},
-    pb: { property: 'paddingBottom' },
+    pb: { property: 'paddingBottom'},
     pl: {propery:'paddingLeft'},
     px: {property:'paddingRight, paddingLeft'},
     py: { property: 'paddingTop, paddingBottom' },    
   }
-  export const background = system<SpacingProps>(config)
+  export const Spacing = system<SpacingProps>(config)
