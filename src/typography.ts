@@ -1,7 +1,7 @@
 import { Property as CSS } from 'csstype';
 import { system, Config, ResponsiveValue, ThemeType, } from '@styled-system/core'
 
-export interface TypograpyProps<Theme extends ThemeType = ThemeType> {
+export interface TypographyProps<Theme extends ThemeType = ThemeType> {
   textOver?: ResponsiveValue<CSS.TextOverflow, Theme>;
   textDecor?: ResponsiveValue<CSS.TextDecoration, Theme>;
   wordSpace?: ResponsiveValue<CSS.WordSpacing, Theme>;
@@ -19,7 +19,7 @@ export interface TypograpyProps<Theme extends ThemeType = ThemeType> {
   fontStyle?: ResponsiveValue<CSS.FontStyle, Theme>;
 }
 
-const config: Config<TypograpyProps> = {
+const config: Config<TypographyProps> = {
   c: { property: 'color' },
   bg: { property: 'backgroundColor' },
   opacity: true,
@@ -40,4 +40,4 @@ const config: Config<TypograpyProps> = {
   fontStyle: { property: 'fontStyle' },
 };
 
-export const typoGraphy = system<TypograpyProps>(config);
+export const typoGraphy = system<TypographyProps>(config);
