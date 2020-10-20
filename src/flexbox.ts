@@ -1,3 +1,4 @@
+
 import { Property as CSS } from 'csstype'
 import { system, Config, ResponsiveValue, ThemeType } from '@styled-system/core'
 
@@ -32,3 +33,4 @@ const config: Config<FlexboxProps> = {
 }
 
 export const flexbox = system<FlexboxProps>(config)
+

@@ -33,3 +33,4 @@ const config: Config<TypographyProps> = {
 }
 
 export const typography = system<TypographyProps>(config)
+
