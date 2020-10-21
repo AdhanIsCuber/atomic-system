@@ -7,31 +7,31 @@ export interface SpacingProps<Theme extends ThemeType = ThemeType>{
     mr?: ResponsiveValue<CSS.MarginRight, Theme>
     mb?: ResponsiveValue<CSS.MarginBottom, Theme>
     ml?: ResponsiveValue<CSS.MarginLeft, Theme>
-    mx?: ResponsiveValue<CSS.MarginRight, MarginLeft, Theme>
-    my?: ResponsiveValue<CSS.MarginTop, MarginBottom, Theme>
+    mx?: ResponsiveValue<CSS.MarginRight | CSS.MarginLeft, Theme>
+    my?: ResponsiveValue<CSS.MarginTop | CSS.MarginBottom, Theme>
     p?: ResponsiveValue<CSS.Padding, Theme>
     pt?: ResponsiveValue<CSS.PaddingTop, Theme>
     pr?: ResponsiveValue<CSS.PaddingRight, Theme>
     pb?: ResponsiveValue<CSS.PaddingBottom, Theme>
     pl?: ResponsiveValue<CSS.PaddingLeft, Theme>
-    px?: ResponsiveValue<CSS.PaddingRight,PaddingLeft, Theme>
-    py?: ResponsiveValue<CSS.PaddingTop,paddingBottom Theme>
+    px?: ResponsiveValue<CSS.PaddingRight | CSS.PaddingLeft, Theme>
+    py?: ResponsiveValue<CSS.PaddingTop | CSS.PaddingBottom, Theme>
 }
 
 const config: Config<SpacingProps> = {
     m: { property: 'margin' },
-    mt: {propery:'marginTop'},
+    mt: { propery: 'marginTop' },
     mr: { property: 'marginRight' },
-    mb: {propery:'marginBottom'},
+    mb: { propery: 'marginBottom' },
     ml: { property: 'marginLeft' },
-    mx: {propery: 'marginRight','marginLeft'},
-    my: { property: 'marginTop','marginBottom'},
+    mx: { properties: ['marginRight','marginLeft'] },
+    my: { properties: ['marginTop','marginBottom'] },
     p: { property: 'padding' },
-    pt: {propery:'paddingTop'},
-    pr: {propery:'paddingRight'},
-    pb: { property: 'paddingBottom'},
-    pl: {propery:'paddingLeft'},
-    px: {property:'paddingRight, paddingLeft'},
-    py: { property: 'paddingTop, paddingBottom' },    
+    pt: { propery: 'paddingTop' },
+    pr: { propery: 'paddingRight' },
+    pb: { property: 'paddingBottom' },
+    pl: { propery: 'paddingLeft' },
+    px: { properties: ['paddingRight, paddingLeft'] },
+    py: { properties: ['paddingTop, paddingBottom'] },
   }
   export const Spacing = system<SpacingProps>(config)
