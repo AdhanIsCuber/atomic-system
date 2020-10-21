@@ -27,7 +27,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "tsc --pretty"
+    "compile": "tsc --pretty",
+    "pretty": "prettier --write \"./**/*.{ts,json}\""
   },
   "repository": {
     "type": "git",
