@@ -3,8 +3,8 @@ import { system, Config, ResponsiveValue, ThemeType } from '@styled-system/core'
 
 export interface ShadowProps<Theme extends ThemeType = ThemeType> {
 
-  shadow?: ResponsiveValue<CSS.boxShadow, Theme>
-  tShadow?: ResponsiveValue<CSS.textShadow, Theme>
+  shadow?: ResponsiveValue<CSS.BoxShadow, Theme>
+  tShadow?: ResponsiveValue<CSS.TextShadow, Theme>
 
 }
 
