@@ -8,11 +8,9 @@ export interface ColorProps<Theme extends ThemeType = ThemeType> {
 }
 
 const config: Config<ColorProps> = {
-  c: { property: 'color'},
-  bg: { property: 'backgroundColor'},
-  opacity: true
+  c: { property: 'color' },
+  bg: { property: 'backgroundColor' },
+  opacity: true,
 }
 
 export const color = system<ColorProps>(config)
-
-
